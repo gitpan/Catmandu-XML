@@ -1,0 +1,11 @@
+CHANGES
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+cpanfile
+lib/Catmandu/Importer/XML.pm
+lib/Catmandu/XML.pm
+t/importer.t
+t/input.xml

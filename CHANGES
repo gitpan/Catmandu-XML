@@ -1,0 +1,9 @@
+Changelog for Catmandu-XML
+
+0.01 2013-09-11T12:19:18
+ - documentation [Jakob Voss]
+ - based on XML::Struct 0.10 [Jakob Voss]
+ - fixed dependencies [Jakob Voss]
+ - support ordered XML [Jakob Voss]
+ - initial draft [Jakob Voss]
+
