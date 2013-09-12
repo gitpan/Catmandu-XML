@@ -1,6 +1,9 @@
 Changelog for Catmandu-XML
 
-0.01 2013-09-11T12:19:18
+0.02 2013-09-12T09:12:01
+ - include root element by default if path is set [Jakob Voss]
+
+0.01 2013-09-11T12:19:11
  - documentation [Jakob Voss]
  - based on XML::Struct 0.10 [Jakob Voss]
  - fixed dependencies [Jakob Voss]
