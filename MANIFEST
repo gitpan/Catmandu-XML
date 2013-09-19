@@ -7,5 +7,7 @@ README
 cpanfile
 lib/Catmandu/Importer/XML.pm
 lib/Catmandu/XML.pm
+t/doc.xml
+t/example.xml
 t/importer.t
 t/input.xml
