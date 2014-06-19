@@ -1,6 +1,6 @@
 package Catmandu::Importer::XML;
 # ABSTRACT: Import serialized XML documents
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 use namespace::clean;
 use Catmandu::Sane;
@@ -51,7 +51,10 @@ sub generator {
 1;
 
 __END__
+
 =pod
+
+=encoding UTF-8
 
 =head1 NAME
 
@@ -59,7 +62,7 @@ Catmandu::Importer::XML - Import serialized XML documents
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 DESCRIPTION
 
@@ -138,8 +141,6 @@ Include ignoreable whitespace. Disabled by default.
 
 =back
 
-=encoding utf8
-
 =head1 SEE ALSO
 
 This module is just a thin layer on top of L<XML::Struct::Reader>. Have a look
@@ -152,10 +153,9 @@ Jakob Voß
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Jakob Voß.
+This software is copyright (c) 2014 by Jakob Voß.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
