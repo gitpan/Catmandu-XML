@@ -6,6 +6,7 @@ META.yml
 Makefile.PL
 README
 cpanfile
+lib/Catmandu/Fix/xml_read.pm
 lib/Catmandu/Fix/xml_transform.pm
 lib/Catmandu/Importer/XML.pm
 lib/Catmandu/XML.pm
@@ -15,4 +16,5 @@ t/example.xml
 t/example.xslt
 t/importer.t
 t/input.xml
+t/xml_read.t
 t/xml_transform.t

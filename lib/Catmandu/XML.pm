@@ -1,6 +1,6 @@
 package Catmandu::XML;
 #ABSTRACT: Modules for handling XML data within the Catmandu framework
-our $VERSION = '0.04'; #VERSION
+our $VERSION = '0.05'; #VERSION
 
 
 1;
@@ -17,7 +17,7 @@ Catmandu::XML - Modules for handling XML data within the Catmandu framework
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 DESCRIPTION
 
@@ -39,7 +39,11 @@ Serialize data structures as XML documents.
 
 =item L<Catmandu::Fix::xml_transform>
 
-Transform XML using XSLT stylesheets.
+Fix function to transform XML using XSLT stylesheets.
+
+=item L<Catmandu::Fix::xml_transform>
+
+Fix function to transform XML using XSLT stylesheets.
 
 =back
 
