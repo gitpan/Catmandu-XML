@@ -1,6 +1,6 @@
 package Catmandu::Fix::xml_transform;
 #ABSTRACT: transform XML using XSLT stylesheet
-our $VERSION = '0.05'; #VERSION
+our $VERSION = '0.06'; #VERSION
 
 use Catmandu::Sane;
 use Moo;
@@ -32,25 +32,21 @@ around BUILDARGS => sub {
     $orig->($class,field => $field,file => $opts{file});
 };
 
-# Transforms xml
 sub emit {    
     my ($self,$fixer) = @_;    
 
-    my $perl = "";
     my $path = $fixer->split_path($self->field());
     my $key = pop @$path;
     
     my $transformer = $fixer->capture($self->_transformer); 
 
-    $perl .= $fixer->emit_walk_path($fixer->var,$path,sub{
+    return $fixer->emit_walk_path($fixer->var,$path,sub{
         my $var = $_[0];     
         $fixer->emit_get_key($var,$key,sub{
             my $var = $_[0];
             return "${var} = ${transformer}->transform(${var});";
         });
     });
-
-    $perl;
 }
 
 
@@ -68,7 +64,7 @@ Catmandu::Fix::xml_transform - transform XML using XSLT stylesheet
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 

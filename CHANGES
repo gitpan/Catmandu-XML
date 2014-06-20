@@ -1,6 +1,9 @@
 Changelog for Catmandu-XML
 
-0.05 2014-06-20T09:41:08
+0.06 2014-06-20T11:21:01
+ - added fix xml_write [Jakob Voss]
+
+0.05 2014-06-20T09:40:48
  - added fix xml_read [Jakob Voss]
 
 0.04 2014-06-19T08:54:35

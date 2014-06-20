@@ -8,6 +8,7 @@ README
 cpanfile
 lib/Catmandu/Fix/xml_read.pm
 lib/Catmandu/Fix/xml_transform.pm
+lib/Catmandu/Fix/xml_write.pm
 lib/Catmandu/Importer/XML.pm
 lib/Catmandu/XML.pm
 lib/Catmandu/XML/Transformer.pm
@@ -18,3 +19,4 @@ t/importer.t
 t/input.xml
 t/xml_read.t
 t/xml_transform.t
+t/xml_write.t
