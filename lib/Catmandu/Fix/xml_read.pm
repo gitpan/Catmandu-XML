@@ -1,6 +1,6 @@
 package Catmandu::Fix::xml_read;
 #ABSTRACT: parse XML
-our $VERSION = '0.06'; #VERSION
+our $VERSION = '0.07'; #VERSION
 
 use Catmandu::Sane;
 use Moo;
@@ -74,7 +74,7 @@ Catmandu::Fix::xml_read - parse XML
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 SYNOPSIS
 
