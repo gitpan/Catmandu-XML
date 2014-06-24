@@ -1,6 +1,6 @@
 package Catmandu::Fix::xml_write;
 #ABSTRACT: parse XML
-our $VERSION = '0.07'; #VERSION
+our $VERSION = '0.08'; #VERSION
 
 use Catmandu::Sane;
 use Moo;
@@ -73,7 +73,7 @@ Catmandu::Fix::xml_write - parse XML
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 SYNOPSIS
 

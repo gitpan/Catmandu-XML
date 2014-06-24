@@ -1,6 +1,6 @@
 package Catmandu::Fix::xml_read;
-#ABSTRACT: parse XML
-our $VERSION = '0.07'; #VERSION
+#ABSTRACT: parse XML to MicroXML
+our $VERSION = '0.08'; #VERSION
 
 use Catmandu::Sane;
 use Moo;
@@ -70,11 +70,11 @@ __END__
 
 =head1 NAME
 
-Catmandu::Fix::xml_read - parse XML
+Catmandu::Fix::xml_read - parse XML to MicroXML
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 SYNOPSIS
 
@@ -132,7 +132,8 @@ not supported yet.
 
 =head1 SEE ALSO
 
-L<Catmandu::Fix::xml_write>
+L<Catmandu::Fix::xml_write>,
+L<Catmandu::Fix::xml_simple>
 
 =head1 AUTHOR
 

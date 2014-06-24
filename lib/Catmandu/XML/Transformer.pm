@@ -1,6 +1,6 @@
 package Catmandu::XML::Transformer;
 #ABSTRACT: Utility module for XSLT processing
-our $VERSION = '0.07'; #VERSION
+our $VERSION = '0.08'; #VERSION
 
 use Catmandu::Sane;
 use Moo;
@@ -54,7 +54,7 @@ Catmandu::XML::Transformer - Utility module for XSLT processing
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 SYNOPISIS
 

@@ -1,6 +1,6 @@
 package Catmandu::XML;
 #ABSTRACT: Modules for handling XML data within the Catmandu framework
-our $VERSION = '0.07'; #VERSION
+our $VERSION = '0.08'; #VERSION
 
 
 1;
@@ -17,7 +17,7 @@ Catmandu::XML - Modules for handling XML data within the Catmandu framework
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 DESCRIPTION
 
@@ -37,9 +37,18 @@ Import serialized XML documents as data structures.
 
 Serialize data structures as XML documents.
 
-=item L<Catmandu::Fix::xml_transform>
+=item L<Catmandu::Fix::xml_read>
 
-Fix function to transform XML using XSLT stylesheets.
+Fix function to parse XML to MicroXML as implemented by L<XML::Struct>
+
+=item L<Catmandu::Fix::xml_write>
+
+Fix function to seralize XML.
+
+=item L<Catmandu::Fix::xml_simple>
+
+Fix function to parse XML or convert MicroXML to simple form as known from
+L<XML::Simple>.
 
 =item L<Catmandu::Fix::xml_transform>
 
