@@ -1,6 +1,9 @@
 Changelog for Catmandu-XML
 
-0.09 2014-06-24T20:40:09
+0.10 2014-06-25T07:15:17
+ - fixed dependencies [Jakob Voss]
+
+0.09 2014-06-24T20:39:57
  - implemented XML Exporter (issue #9) [Jakob Voss]
 
 0.08 2014-06-24T10:06:10
