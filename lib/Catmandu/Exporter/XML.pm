@@ -1,6 +1,6 @@
 package Catmandu::Exporter::XML;
 #ABSTRACT: serialize and export XML documents
-our $VERSION = '0.11'; #VERSION
+our $VERSION = '0.12'; #VERSION
 
 use Catmandu::Sane;
 use Moo;
@@ -17,7 +17,6 @@ has directory => (
 has field => ( 
     is      => 'ro',
     lazy    => 1, 
-    default => sub { defined $_[0]->directory ? '_xml' : undef }
 );
 has filename  => ( 
     is => 'ro', 
@@ -87,7 +86,7 @@ Catmandu::Exporter::XML - serialize and export XML documents
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 DESCRIPTION
 
@@ -100,10 +99,15 @@ written to STDOUT.
 =over
 
 =item attributes
+
 =item xmldecl
+
 =item encoding
+
 =item version
+
 =item standalone
+
 =item pretty
 
 These options are passed to L<XML::Struct::Writer>. The target (option C<to>)
@@ -114,8 +118,6 @@ is based on L<Catmandu::Exporter>'s option C<fh> or C<file>.
 Take XML from a given field of each item, e.g. field C<xml> as following:
 
     { xml => [ root => { xmlns => 'http://example.org/' }, [ ... ] ] }
-
-The default field name C<_xml> is implied if option C<directory> is set.
 
 =item directory
 

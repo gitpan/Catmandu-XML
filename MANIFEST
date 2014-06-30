@@ -16,10 +16,12 @@ lib/Catmandu/XML.pm
 lib/Catmandu/XML/Transformer.pm
 t/doc.xml
 t/example.xml
-t/example.xslt
 t/exporter.t
 t/importer.t
 t/input.xml
+t/transform1.xsl
+t/transform2.xsl
+t/transform3.xsl
 t/xml_read.t
 t/xml_simple.t
 t/xml_transform.t

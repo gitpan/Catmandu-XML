@@ -1,6 +1,12 @@
 Changelog for Catmandu-XML
 
-0.11 2014-06-29T15:37:24
+0.12 2014-06-30T08:41:52
+ - make exporter option 'field' optional [Jakob Voss]
+ - Merge branch 'master' of github.com:gbv/Catmandu-XML [Jakob Voss]
+ - support XSLT pipelines (issue dist.ini) [Jakob Voss]
+ - support <xsl:output method="text"/> [Jakob Voss]
+
+0.11 2014-06-29T15:35:52
  - fixed issue #11 [Jakob Voss]
 
 0.10 2014-06-25T07:15:12

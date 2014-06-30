@@ -1,6 +1,6 @@
 package Catmandu::Importer::XML;
 # ABSTRACT: Import serialized XML documents
-our $VERSION = '0.11'; # VERSION
+our $VERSION = '0.12'; # VERSION
 
 use namespace::clean;
 use Catmandu::Sane;
@@ -57,7 +57,7 @@ Catmandu::Importer::XML - Import serialized XML documents
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 DESCRIPTION
 
