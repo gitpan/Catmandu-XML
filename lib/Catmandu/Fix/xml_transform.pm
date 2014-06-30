@@ -1,6 +1,6 @@
 package Catmandu::Fix::xml_transform;
 #ABSTRACT: transform XML using XSLT stylesheet
-our $VERSION = '0.12'; #VERSION
+our $VERSION = '0.13'; #VERSION
 
 use Catmandu::Sane;
 use Moo;
@@ -61,7 +61,7 @@ Catmandu::Fix::xml_transform - transform XML using XSLT stylesheet
 
 =head1 VERSION
 
-version 0.12
+version 0.13
 
 =head1 SYNOPSIS
 

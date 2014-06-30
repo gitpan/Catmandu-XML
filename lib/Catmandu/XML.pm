@@ -1,6 +1,6 @@
 package Catmandu::XML;
 #ABSTRACT: Modules for handling XML data within the Catmandu framework
-our $VERSION = '0.12'; #VERSION
+our $VERSION = '0.13'; #VERSION
 
 
 1;
@@ -17,7 +17,7 @@ Catmandu::XML - Modules for handling XML data within the Catmandu framework
 
 =head1 VERSION
 
-version 0.12
+version 0.13
 
 =head1 DESCRIPTION
 

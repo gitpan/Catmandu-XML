@@ -1,6 +1,6 @@
 package Catmandu::Fix::xml_read;
 #ABSTRACT: parse XML to MicroXML
-our $VERSION = '0.12'; #VERSION
+our $VERSION = '0.13'; #VERSION
 
 use Catmandu::Sane;
 use Moo;
@@ -74,7 +74,7 @@ Catmandu::Fix::xml_read - parse XML to MicroXML
 
 =head1 VERSION
 
-version 0.12
+version 0.13
 
 =head1 SYNOPSIS
 
