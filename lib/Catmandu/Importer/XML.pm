@@ -1,11 +1,12 @@
 package Catmandu::Importer::XML;
 # ABSTRACT: Import serialized XML documents
-our $VERSION = '0.13'; # VERSION
+our $VERSION = '0.14'; # VERSION
 
 use namespace::clean;
 use Catmandu::Sane;
 use Moo;
 use XML::Struct::Reader;
+use Catmandu::XML::Transformer;
 
 with 'Catmandu::Importer';
 
@@ -16,6 +17,8 @@ has depth       => (is => 'ro');
 has ns          => (is => 'ro', default => sub { '' });
 has attributes  => (is => 'ro', default => sub { 1 });
 has whitespace  => (is => 'ro', default => sub { 0 });
+has transform   => (is => 'ro', coerce => sub { 
+        Catmandu::XML::Transformer->new( stylesheet => $_[0] ) });
 
 sub generator {
     my ($self) = @_;
@@ -37,8 +40,13 @@ sub generator {
             }
             XML::Struct::Reader->new(%options);
         };
+    
+        my $item = $reader->readNext;
 
-        return $reader->readNext;
+        # TODO: transformation should be done earlier for efficiency
+        # and because simple format modifies the XML document (bug)
+        return $self->transform ?
+               $self->transform->transform($item) : $item
     }
 }
 
@@ -57,15 +65,21 @@ Catmandu::Importer::XML - Import serialized XML documents
 
 =head1 VERSION
 
-version 0.13
+version 0.14
 
 =head1 DESCRIPTION
 
-This importer reads XML and transforms it into a data structure. 
+This L<Catmandu::Importer> reads XML and transforms it into a data structure. 
+
+See L<Catmandu::Importer>, L<Catmandu::Iterable>, L<Catmandu::Logger> and
+L<Catmandu::Fixable> for methods and options derived from these modules.
+
+The importer can also be used internally for custom importers that need to
+parse XML data.
 
 =head1 CONFIGURATION
 
-=over 4
+=over
 
 =item type
 
@@ -128,11 +142,16 @@ option is set.
 
 =item ns
 
-Set to 'C<strip>' for stripping namespace prefixes and xmlns-attributes.
+Set to C<strip> for stripping namespace prefixes and xmlns-attributes.
 
 =item whitespace
 
 Include ignoreable whitespace. Disabled by default.
+
+=item transform
+
+Optional (list of) XSLT stylesheets to process records. This option is not
+fully implemented yet!
 
 =back
 

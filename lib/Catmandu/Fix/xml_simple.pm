@@ -1,6 +1,6 @@
 package Catmandu::Fix::xml_simple;
 #ABSTRACT: parse/convert XML to simple form
-our $VERSION = '0.13'; #VERSION
+our $VERSION = '0.14'; #VERSION
 
 use Catmandu::Sane;
 use Moo;
@@ -91,7 +91,7 @@ Catmandu::Fix::xml_simple - parse/convert XML to simple form
 
 =head1 VERSION
 
-version 0.13
+version 0.14
 
 =head1 SYNOPSIS
 

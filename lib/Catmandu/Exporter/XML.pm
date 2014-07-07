@@ -1,6 +1,6 @@
 package Catmandu::Exporter::XML;
 #ABSTRACT: serialize and export XML documents
-our $VERSION = '0.13'; #VERSION
+our $VERSION = '0.14'; #VERSION
 
 use Catmandu::Sane;
 use Moo;
@@ -83,7 +83,7 @@ Catmandu::Exporter::XML - serialize and export XML documents
 
 =head1 VERSION
 
-version 0.13
+version 0.14
 
 =head1 DESCRIPTION
 
